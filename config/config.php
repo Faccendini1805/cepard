@@ -1,9 +1,11 @@
 <?php
+require_once __DIR__ . '/config.php'; // Asegurate de esto antes de usar App\Database
+
 // Configuración de la base de datos
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'sistema_evaluaciones');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_NAME', getenv('DB_NAME') ?: 'sistema_evaluaciones');
+define('DB_USER', getenv('DB_USER') ?: 'cepard_user');
+define('DB_PASS', getenv('DB_PASS') ?: 'clave_segura');
 define('DB_CHARSET', 'utf8mb4');
 
 // Configuración de la aplicación

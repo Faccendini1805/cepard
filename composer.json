@@ -1,5 +1,5 @@
 {
-    "name": "sistema-evaluaciones",
+    "name": "cepard/sistema-evaluaciones",
     "description": "Sistema de gestión de tests y evaluaciones",
     "type": "project",
     "require": {
